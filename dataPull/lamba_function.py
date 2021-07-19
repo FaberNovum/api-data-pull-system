@@ -13,7 +13,7 @@ CHUNK_SIZE = 10000 # determined based on API, memory constraints, and experiment
 def _get_key():
     dt_now = datetime.now(tz=timezone.utc)
     KEY = (
-        dt.now.strftime("%Y-%m-%d")
+        dt_now.strftime("%Y-%m-%d")
         + "/"
         + dt_now.strftime("%H")
         + "/"
