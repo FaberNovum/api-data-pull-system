@@ -7,7 +7,7 @@ import json
 
 s3_client = boto3.client("s3")
 LOCAL_FILE_SYS = "/tmp"
-S3_BUCKET = "twrighttestbucket" # replace with your bucket name
+S3_BUCKET = "your-bucket-name" # replace with your bucket name
 CHUNK_SIZE = 10000 # determined based on API, memory constraints, and experimentation
 
 def _get_key():
